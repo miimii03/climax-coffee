@@ -204,13 +204,11 @@
   }
   #store main .store-info {
     width: 360px;
-    background-color: red;
   }
   #store main .store-info h2 {
     font-size: 20px;
   }
   #store main .store-info-mihama {
-    background-color: red;
     width: 360px;
     display: block;
   }
@@ -220,15 +218,12 @@
   #store main .store-info-mihama .store-info-left .store-info-tel-text {
     margin-bottom: 35px;
   }
-  #store main .store-info-image {
-    margin-bottom: 70px;
-  }
   #store main .store-info-map {
-    width: 300px;
-    margin: 0 0;
+    width: 360px;
+    margin: 0 auto 100px auto;
   }
   #store main iframe {
-    width: 300px;
+    width: 360px;
   }
   #blog main .blog-main-image img {
     height: 400px;
@@ -243,15 +238,18 @@
     height: 150px;
     width: 150px;
   }
-  #blog main ul li img {
+  #blog main ul li a img {
     width: 150px;
     height: 100px;
   }
-  #blog main ul li time {
-    font-size: 14px;
-  }
-  #blog main ul li span {
+  #blog main ul li a time {
     font-size: 10px;
+  }
+  #blog main ul li a .title {
+    font-size: 10px;
+  }
+  #blog main ul li a p {
+    height: 50px;
   }
   #contact main .contact-main-image img {
     height: 400px;
@@ -259,7 +257,7 @@
   }
   #contact main .form-all {
     width: auto;
-    margin: 0 auto 300px auto;
+    margin: 0 auto 100px auto;
   }
   #contact main .form-all form {
     width: 250px;

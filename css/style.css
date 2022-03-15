@@ -73,7 +73,7 @@ body {
 }
 
 #home header .header-logo {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 #home header h1 {
@@ -91,7 +91,7 @@ body {
 #home header .english {
   letter-spacing: 4px;
   font-weight: bold;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #home header ul {
@@ -130,8 +130,38 @@ body {
   margin-bottom: 25px;
 }
 
+.hamburger-nav {
+  height: 400px;
+}
+
+.hamburger-nav .nav-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.hamburger-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .hamburger-nav ul li a {
-  color: #d7092f;
+  color: #ffffff;
+}
+
+.hamburger-nav ul li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger-nav ul li a:hover {
+  opacity: 0.7;
 }
 
 .content header {
@@ -660,6 +690,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#blog main ul li a {
+  text-decoration: none;
+  color: #3a2205;
+}
+
+#blog main ul li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#blog main ul li a:hover {
+  opacity: 0.7;
 }
 
 #blog main ul li p {
