@@ -1,0 +1,390 @@
+
+
+// ------------------------------------------------
+// 　　　　　　　　　全体構造
+// ------------------------------------------------
+
+
+// --------------ハンバーガーメニュー----------------------
+
+/* PC時には非表示 */
+.hamburger-button {
+  display: none;
+}
+/* スマホ表示時 */
+@media screen and (max-width:480px) {
+  .hamburger-button {
+    display: flex;
+  }
+}
+
+
+// --------------矢印（下）----------------------
+
+
+/* PC時には非表示 */
+.page-down {
+  display: none;
+}
+/* スマホ表示時 */
+@media screen and (max-width:480px) {
+  .page-down {
+    display: inline;
+    text-align: center;
+    i {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    p {
+      letter-spacing: 1px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+// --------------テイクアウト見出し----------------------
+
+/* PC時には非表示 */
+.takeout-responsive {
+  display: none;
+}
+/* スマホ表示時 */
+@media screen and (max-width:480px) {
+  .takeout-responsive {
+    display: block;
+  }
+}
+
+
+// --------------新商品 写真----------------------
+
+
+/* PC時には非表示 */
+.new-items-responsive {
+  display: none;
+}
+/* スマホ表示時 */
+@media screen and (max-width:480px) {
+  .new-items-responsive {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+// --------------改行 レスポンシブ用----------------------
+
+
+
+
+@media screen and (max-width:480px) {
+  img {
+    max-width: 100%;
+  }
+
+// --------------ナビゲーションを消す----------------------
+
+  .nav {
+    display: none;
+  }
+
+  .br-responsive {
+    display: inline;
+  }
+
+  
+
+// ------------------------------------------------
+// 　　　　　　　　　ヘッダー
+// ------------------------------------------------
+
+
+  #home {
+    header {
+      .topics {
+        display: none;
+      }
+      .english {
+        display: none;
+      }
+      .copylight {
+        display: none;
+      }
+      ul {
+        display: none;
+      }
+      .header-logo {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+
+// --------------コンテンツページのヘッダー----------------------
+
+  .content {
+    header{
+      height: auto;
+      .header-logo {
+        margin-top: 130px;
+        margin-bottom: 20px;
+        height: auto;
+        img {
+          width: 200px;
+        }
+      }
+      h1 {
+        font-size: 50px;
+      }
+    }
+    
+  }
+
+
+// ------------------------------------------------
+// 　　　　　　　　　　メイン
+// ------------------------------------------------
+
+// --------------トップページ----------------------
+  #home {
+    main {
+      .main-image img {
+        margin-bottom: 100px;
+      }
+      .line-up {
+        margin-bottom: 100px;
+      }
+      .button {
+        width: 300px;
+      }
+      .slider-text {
+        display: none;
+      }
+      .take-out {
+        background-image: none;
+        height: auto;
+        text-align: center;
+        background-image: url(../images/bg-body.png);
+        background-size: auto;
+        background-position: top;
+        background-repeat: repeat;
+        margin-bottom: 100px;
+        .take-out-inner {
+          display: block;
+          width: 340px;
+          margin: 50px auto;
+          h2 {
+            font-size: 28px;
+            text-align: center;
+          }
+          h3 {
+            text-align: center;
+          }
+          img {
+            margin-bottom: 20px;
+          }
+          h4 {
+            line-height: 1.6;
+          }
+          .takeout-pc {
+            display: none;
+          }
+        }
+      }
+      .new-items {
+        background-image: none;
+        height: auto;
+        text-align: center;
+        background-image: url(../images/bg-body.png);
+        background-position: top;
+        background-repeat: repeat;
+        margin-bottom: 100px;
+        .new-items-inner {
+          width: 340px;
+          display: block;
+          margin: 50px auto;
+          .new-items-image {
+            display: none;
+          }
+          h2 {
+            text-align: center;
+          }
+          h3 {
+            text-align: center;
+          }
+          h4 {
+            text-align: center;
+          }
+          p {
+            text-align: center
+          }
+        }
+      }
+    }
+  }
+
+
+// --------------メニューページ----------------------
+
+  #menu {
+    main {
+      .manu-main-image img {
+        height: 400px;
+        margin-bottom: 100px;
+      }
+      .menu-drink {
+        width: auto;
+        .menu-drink-list {
+          margin: 0 auto 100px auto;
+          width: 295px;
+          height: 460px;
+          img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+      .menu-food {
+        width: auto;
+        .menu-food-list {
+          margin: 0 auto 100px auto;
+          width: 295px;
+          height: 460px;
+          img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // --------------店舗情報ページ----------------------
+
+  #store {
+    main {
+      .store-main-image img {
+        height: 400px;
+        margin-bottom: 100px
+      }
+      .store-info {
+        width: 360px;
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .store-info-mihama {
+        width: 360px;
+        display: block;
+        .store-info-left {
+          padding-left: 20px ;
+          .store-info-tel-text {
+            margin-bottom: 35px;
+          }
+        }
+      }
+      .store-info-map {
+        width: 360px;
+        margin: 0 auto 100px auto;
+      }
+      iframe {
+        width: 360px;
+      }
+    }
+  }
+
+
+// --------------ブログページ----------------------
+
+  #blog {
+    main {
+      .blog-main-image img {
+        height: 400px;
+        margin-bottom: 100px
+      }
+      ul {
+        width: 320px;
+        height: 490px;
+        li {
+          background-image: url(../images/bg-body.png);
+          height: 150px;
+          width: 150px;
+          a {
+            img {
+              width: 150px;
+              height: 100px;
+            }
+            time {
+              font-size: 10px;
+            }
+            .title {
+              font-size: 10px;
+            }
+            p {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+// --------------お問い合わせページ----------------------
+
+  #contact {
+    main {
+      .contact-main-image img {
+        height: 400px;
+        margin-bottom: 100px
+      }
+      .form-all {
+        width: auto;
+        margin: 0 auto 100px auto;
+        form {
+          width: 250px;
+          margin: 50px auto 90px auto;
+          input {
+            width: 250px;
+          }
+          textarea {
+            width: 250px;
+          }
+          .form-button-area {
+            .form-button {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+// ------------------------------------------------
+// 　　　　　　　　　フッター
+// ------------------------------------------------
+
+  #home,
+  #menu,
+  #store,
+  #blog,
+  #contact {
+    footer {
+      address {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      .copy-light {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

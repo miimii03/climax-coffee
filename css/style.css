@@ -1,0 +1,827 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff;
+  color: #3a2205;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+  width: 55px;
+  height: 50px;
+}
+
+.back-top a:hover {
+  background-color: #ffffff;
+  color: #d7092f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.back-top a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  background-color: #d7092f;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: auto auto;
+  line-height: 50px;
+  font-size: 20px;
+  border: 2px solid #d7092f;
+}
+
+.br-responsive {
+  display: none;
+}
+
+#home .home {
+  border-bottom: 1px solid #ffffff;
+}
+
+#home header {
+  height: 100vh;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+#home header .header-logo {
+  margin-top: 200px;
+}
+
+#home header h1 {
+  font-size: 40px;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#home header .topics {
+  text-align: center;
+}
+
+#home header .english {
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+#home header ul {
+  width: 765px;
+  height: 50px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home header .nav-main {
+  width: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home header .nav-sub {
+  width: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home header .copylight {
+  margin-bottom: 25px;
+}
+
+.hamburger-nav ul li a {
+  color: #d7092f;
+}
+
+.content header {
+  height: 600px;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.content header .header-logo {
+  height: 98px;
+  margin-top: 156px;
+}
+
+.content header h1 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  letter-spacing: 5px;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
+
+.content header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 765px;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 156px;
+}
+
+.content header .nav-main {
+  width: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content header .nav-sub {
+  width: 115px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menu .menu {
+  border-bottom: 1px solid #ffffff;
+}
+
+#store .store {
+  border-bottom: 1px solid #ffffff;
+}
+
+#blog .blog {
+  border-bottom: 1px solid #ffffff;
+}
+
+#contact .contact {
+  border-bottom: 1px solid #ffffff;
+}
+
+#home main .main-image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 175px;
+}
+
+#home main p {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+#home main .line-up {
+  margin-bottom: 270px;
+}
+
+#home main .line-up h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#home main .line-up h3 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+#home main .line-up .slider {
+  height: 100%;
+  margin: 0 auto 70px auto;
+}
+
+#home main .line-up .slider .hover-white {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home main .line-up .slider img {
+  width: 20vw;
+}
+
+#home main .line-up .slider .hover-white:hover {
+  opacity: 0.7;
+}
+
+#home main .line-up .slider button {
+  display: none !important;
+}
+
+#home main .line-up .slider a {
+  text-decoration: none;
+  color: #3a2205;
+}
+
+#home main .line-up .slider a .slider-text {
+  height: 70px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#home main .button {
+  width: 350px;
+  height: 65px;
+  background-color: #d7092f;
+  border-radius: 48px;
+  text-align: center;
+  line-height: 65px;
+  margin: 0 auto;
+  position: relative;
+  font-weight: bold;
+  border: 2px solid #d7092f;
+}
+
+#home main .button a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#home main .button .arrow {
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+}
+
+#home main .button:hover {
+  background-color: #ffffff;
+  border: 2px solid #d7092f;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#home main .button:hover a:hover {
+  color: #d7092f;
+}
+
+#home main .take-out {
+  height: 630px;
+  background-image: url(../images/bg-pattern.png), url(../images/takeout-illust.png);
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: 750px 630px, auto;
+  margin-bottom: 270px;
+  overflow: hidden;
+}
+
+#home main .take-out .take-out-inner {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 123px auto;
+}
+
+#home main .take-out h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#home main .take-out h3 {
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+#home main .take-out h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#home main .take-out h4 br {
+  display: none;
+}
+
+#home main .new-items {
+  height: 630px;
+  background-image: url(../images/newitems-illust.png), url(../images/bg-pattern.png);
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: auto, 810px 630px;
+  margin-bottom: 270px;
+  overflow: hidden;
+}
+
+#home main .new-items .new-items-inner {
+  width: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 123px auto;
+}
+
+#home main .new-items h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#home main .new-items h3 {
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+#home main .new-items h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+#menu main .manu-main-image img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 170px;
+}
+
+#menu main h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#menu main h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#menu main .menu-drink {
+  width: 1000px;
+  margin: 0 auto 170px auto;
+}
+
+#menu main .menu-drink .menu-drink-list {
+  height: 650px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#menu main .menu-drink .menu-drink-list img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu main .menu-drink .menu-drink-list img:hover {
+  opacity: 0.7;
+}
+
+#menu main .menu-food {
+  width: 1000px;
+  margin: 0 auto 170px auto;
+}
+
+#menu main .menu-food .menu-food-list {
+  height: 650px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#menu main .menu-food .menu-food-list img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu main .menu-food .menu-food-list img:hover {
+  opacity: 0.7;
+}
+
+#store main .store-main-image img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 170px;
+}
+
+#store main .store-info h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#store main .store-info h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+#store main .store-info p {
+  text-align: center;
+  margin-bottom: 112px;
+  line-height: 1.6;
+}
+
+#store main .store-info-mihama {
+  width: 960px;
+  margin: 0 auto 170px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#store main .store-info-mihama h4 {
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+#store main .store-info-mihama p {
+  line-height: 1.6;
+}
+
+#store main .store-info-mihama .store-info-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#store main .store-info-mihama .store-info-address i {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #d7092f;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#store main .store-info-mihama .store-info-address .store-info-address-text address {
+  line-height: 1.6;
+}
+
+#store main .store-info-mihama .store-info-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#store main .store-info-mihama .store-info-time i {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #d7092f;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#store main .store-info-mihama .store-info-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#store main .store-info-mihama .store-info-tel i {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #d7092f;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#store main .store-info-map {
+  width: 1060px;
+  height: 430px;
+  margin: 0 auto 270px auto;
+}
+
+#blog main {
+  margin-bottom: 170px;
+}
+
+#blog main .blog-main-image img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 170px;
+}
+
+#blog main h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#blog main h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+#blog main ul {
+  width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#blog main ul li {
+  background-image: url(../images/bg-body.png);
+  height: 300px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#blog main ul li p {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact main .contact-main-image img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 170px;
+}
+
+#contact main h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 35px;
+  letter-spacing: 2PX;
+}
+
+#contact main h3 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: bold;
+}
+
+#contact main .contact-text {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#contact main .form-all {
+  background-image: url(../images/bg-body.png);
+  width: 1000px;
+  margin: 0 auto 300px auto;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+#contact main .form-all form {
+  width: 600px;
+  margin: 50px auto 90px auto;
+}
+
+#contact main .form-all form input {
+  width: 600px;
+  height: 30px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+#contact main .form-all form textarea {
+  height: 300px;
+  width: 600px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+#contact main .form-all form .form-button-area {
+  text-align: center;
+}
+
+#contact main .form-all form .form-button-area .form-button {
+  background-color: #d7092f;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  font-weight: bold;
+}
+
+#contact main .form-all form .form-button-area .form-button:hover {
+  background-color: #ffffff;
+  color: #d7092f;
+  border: 2px solid #d7092f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+footer .footer-logo {
+  width: 75px;
+  margin: 60px auto 30px auto;
+}
+
+footer .footer-logo-bottom {
+  width: 310px;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 35px;
+}
+
+footer address {
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+footer ul {
+  list-style-type: none;
+  width: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 30px auto;
+}
+
+footer .footer-icon-top {
+  width: 310px;
+  border-top: 3px solid #ffffff;
+  padding-top: 35px;
+}
+
+footer p {
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+
+.top-footer-image img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

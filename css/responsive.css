@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* PC時には非表示 */
+.hamburger-button {
+  display: none;
+}
+
+/* スマホ表示時 */
+@media screen and (max-width: 480px) {
+  .hamburger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* PC時には非表示 */
+.page-down {
+  display: none;
+}
+
+/* スマホ表示時 */
+@media screen and (max-width: 480px) {
+  .page-down {
+    display: inline;
+    text-align: center;
+  }
+  .page-down i {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .page-down p {
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+  }
+}
+
+/* PC時には非表示 */
+.takeout-responsive {
+  display: none;
+}
+
+/* スマホ表示時 */
+@media screen and (max-width: 480px) {
+  .takeout-responsive {
+    display: block;
+  }
+}
+
+/* PC時には非表示 */
+.new-items-responsive {
+  display: none;
+}
+
+/* スマホ表示時 */
+@media screen and (max-width: 480px) {
+  .new-items-responsive {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+  .nav {
+    display: none;
+  }
+  .br-responsive {
+    display: inline;
+  }
+  #home header .topics {
+    display: none;
+  }
+  #home header .english {
+    display: none;
+  }
+  #home header .copylight {
+    display: none;
+  }
+  #home header ul {
+    display: none;
+  }
+  #home header .header-logo img {
+    width: 150px;
+  }
+  .content header {
+    height: auto;
+  }
+  .content header .header-logo {
+    margin-top: 130px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .content header .header-logo img {
+    width: 200px;
+  }
+  .content header h1 {
+    font-size: 50px;
+  }
+  #home main .main-image img {
+    margin-bottom: 100px;
+  }
+  #home main .line-up {
+    margin-bottom: 100px;
+  }
+  #home main .button {
+    width: 300px;
+  }
+  #home main .slider-text {
+    display: none;
+  }
+  #home main .take-out {
+    background-image: none;
+    height: auto;
+    text-align: center;
+    background-image: url(../images/bg-body.png);
+    background-size: auto;
+    background-position: top;
+    background-repeat: repeat;
+    margin-bottom: 100px;
+  }
+  #home main .take-out .take-out-inner {
+    display: block;
+    width: 340px;
+    margin: 50px auto;
+  }
+  #home main .take-out .take-out-inner h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  #home main .take-out .take-out-inner h3 {
+    text-align: center;
+  }
+  #home main .take-out .take-out-inner img {
+    margin-bottom: 20px;
+  }
+  #home main .take-out .take-out-inner h4 {
+    line-height: 1.6;
+  }
+  #home main .take-out .take-out-inner .takeout-pc {
+    display: none;
+  }
+  #home main .new-items {
+    background-image: none;
+    height: auto;
+    text-align: center;
+    background-image: url(../images/bg-body.png);
+    background-position: top;
+    background-repeat: repeat;
+    margin-bottom: 100px;
+  }
+  #home main .new-items .new-items-inner {
+    width: 340px;
+    display: block;
+    margin: 50px auto;
+  }
+  #home main .new-items .new-items-inner .new-items-image {
+    display: none;
+  }
+  #home main .new-items .new-items-inner h2 {
+    text-align: center;
+  }
+  #home main .new-items .new-items-inner h3 {
+    text-align: center;
+  }
+  #home main .new-items .new-items-inner h4 {
+    text-align: center;
+  }
+  #home main .new-items .new-items-inner p {
+    text-align: center;
+  }
+  #menu main .manu-main-image img {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  #menu main .menu-drink {
+    width: auto;
+  }
+  #menu main .menu-drink .menu-drink-list {
+    margin: 0 auto 100px auto;
+    width: 295px;
+    height: 460px;
+  }
+  #menu main .menu-drink .menu-drink-list img {
+    width: 130px;
+    height: 130px;
+  }
+  #menu main .menu-food {
+    width: auto;
+  }
+  #menu main .menu-food .menu-food-list {
+    margin: 0 auto 100px auto;
+    width: 295px;
+    height: 460px;
+  }
+  #menu main .menu-food .menu-food-list img {
+    width: 130px;
+    height: 130px;
+  }
+  #store main .store-main-image img {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  #store main .store-info {
+    width: 360px;
+    background-color: red;
+  }
+  #store main .store-info h2 {
+    font-size: 20px;
+  }
+  #store main .store-info-mihama {
+    background-color: red;
+    width: 360px;
+    display: block;
+  }
+  #store main .store-info-mihama .store-info-left {
+    padding-left: 20px;
+  }
+  #store main .store-info-mihama .store-info-left .store-info-tel-text {
+    margin-bottom: 35px;
+  }
+  #store main .store-info-image {
+    margin-bottom: 70px;
+  }
+  #store main .store-info-map {
+    width: 300px;
+    margin: 0 0;
+  }
+  #store main iframe {
+    width: 300px;
+  }
+  #blog main .blog-main-image img {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  #blog main ul {
+    width: 320px;
+    height: 490px;
+  }
+  #blog main ul li {
+    background-image: url(../images/bg-body.png);
+    height: 150px;
+    width: 150px;
+  }
+  #blog main ul li img {
+    width: 150px;
+    height: 100px;
+  }
+  #blog main ul li time {
+    font-size: 14px;
+  }
+  #blog main ul li span {
+    font-size: 10px;
+  }
+  #contact main .contact-main-image img {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  #contact main .form-all {
+    width: auto;
+    margin: 0 auto 300px auto;
+  }
+  #contact main .form-all form {
+    width: 250px;
+    margin: 50px auto 90px auto;
+  }
+  #contact main .form-all form input {
+    width: 250px;
+  }
+  #contact main .form-all form textarea {
+    width: 250px;
+  }
+  #contact main .form-all form .form-button-area .form-button {
+    width: 250px;
+  }
+  #home footer address,
+  #menu footer address,
+  #store footer address,
+  #blog footer address,
+  #contact footer address {
+    text-align: center;
+  }
+  #home footer p,
+  #menu footer p,
+  #store footer p,
+  #blog footer p,
+  #contact footer p {
+    text-align: center;
+  }
+  #home footer .copy-light,
+  #menu footer .copy-light,
+  #store footer .copy-light,
+  #blog footer .copy-light,
+  #contact footer .copy-light {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,712 @@
+
+@import 'settings.scss';
+
+// ------------------------------------------------
+// 　　　　　　　　　全体構造
+// ------------------------------------------------
+
+body {
+  background-color: $base-color;
+  color: $main-color;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+  width: 55px;
+  height: 50px;
+  a:hover {
+    background-color: $base-color;
+    color: $accent-color;
+    transition: 0.5s;
+  }
+  a {
+    display: block;
+    color: $base-color;
+    text-align: center;
+    background-color: $accent-color;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: auto auto;
+    line-height: 50px;
+    font-size: 20px;
+    border: 2px solid $accent-color;
+  }
+}
+
+
+// ---------- レスポンシブ用改行 -----------
+
+.br-responsive {
+  display: none;
+}
+
+
+// ------------------------------------------------
+// 　　　　　　　　　ヘッター
+// ------------------------------------------------
+#home {
+  .home {
+    border-bottom: 1px solid $base-color;
+  }
+  header {
+    height: 100vh;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+    .header-logo {
+      margin-top: 100px;
+    }
+    h1 {
+      font-size: 40px;
+      font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .topics {
+      text-align: center;
+    }
+    .english {
+      letter-spacing: 4px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    ul {
+      width: 765px;
+      height: 50px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-main {
+      width: 610px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-sub {
+      width: 115px;
+      display: flex;
+      justify-content: space-between; 
+    }
+    .copylight {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+// ---------- ハンバーガーメニュー -----------
+.hamburger-nav {
+  height: 400px;
+  .nav-sub {
+    display: flex;
+    margin-top: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      a{
+        color: $base-color
+      }
+      a {
+        transition: 0.5s ;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+
+// ---------- コンテンツページ -----------
+
+.content {
+  header{
+    height: 600px;
+    color: $base-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      color: $base-color;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+    .header-logo {
+      height: 98px;
+      margin-top: 156px;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 70px;
+      letter-spacing: 5px;
+      font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 765px;
+      height: 48px;
+      line-height: 48px;
+      margin-bottom: 156px;
+    }
+    .nav-main {
+      width: 610px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-sub {
+      width: 115px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// ---------- メニューページ -----------
+
+#menu {
+  .menu {
+    border-bottom: 1px solid $base-color;
+  }
+}
+
+
+
+// ---------- 店舗情報ページ -----------
+
+#store {
+  .store {
+    border-bottom: 1px solid $base-color;
+  }
+}
+
+
+// ---------- ブログページ -----------
+
+#blog {
+  .blog {
+    border-bottom: 1px solid $base-color;
+  }
+}
+
+
+// ---------- コンタクトページ -----------
+
+#contact {
+  .contact {
+    border-bottom: 1px solid $base-color;
+  }
+}
+
+
+
+// ------------------------------------------------
+// 　　　　　　　　メイン（トップ）
+// ------------------------------------------------
+#home {
+  main {
+    .main-image img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      margin-bottom: 175px;
+    }
+    p {
+      line-height: 2;
+      margin-bottom: 30px
+    }
+    .line-up {
+      margin-bottom: 270px;
+      h2 {
+        @include text-center(10px);
+        @include topics;
+      }
+      h3 {
+        @include text-center(60px);
+        font-weight: bold;
+      }
+      .slider {
+        height: 100%;
+        margin: 0 auto 70px auto;
+        .hover-white {
+          transition: 0.5s;
+        }
+        img {
+          width: 20vw;
+        }
+        .hover-white:hover {
+          opacity: 0.7;
+        }
+        button {
+          display: none !important;  //絶対効いてね
+        }
+        a {
+          text-decoration: none;
+          color: $main-color;
+          .slider-text {
+            height: 70px;
+            padding-top: 50px;
+            text-align: center;
+        }
+      }
+    }
+  }
+    .button {
+      width: 350px;
+      height: 65px;
+      background-color: $accent-color;
+      border-radius: 48px;
+      text-align: center;
+      line-height: 65px;
+      margin: 0 auto;
+      position: relative;
+      font-weight: bold;
+      border: 2px solid $accent-color;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+      }
+      .arrow {
+        position: absolute;
+        right: 30px;
+        font-size: 30px;
+        }
+      }
+      .button:hover {
+        background-color: $base-color;
+        border: 2px solid $accent-color;
+        transition: background-color 0.5s;
+        a:hover {
+          color: $accent-color;
+        }
+      }
+    .take-out{ 
+      height: 630px;
+      background-image: url(../images/bg-pattern.png), url(../images/takeout-illust.png);
+      background-repeat: no-repeat;
+      background-position: left, right;
+      background-size: 750px 630px, auto;
+      margin-bottom: 270px;
+      overflow: hidden;   //飛び出し防止の為
+      .take-out-inner {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin: 123px auto;
+      }
+      h2 {
+        @include text-left(20px);
+        @include topics;
+      }
+      h3 {
+        @include text-left(40px);
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 35px;
+          br {
+          display: none;
+          }
+      }
+    }
+    .new-items{
+      height: 630px;
+      background-image: url(../images/newitems-illust.png), url(../images/bg-pattern.png);
+      background-repeat: no-repeat;
+      background-position: left, right;
+      background-size: auto, 810px 630px;
+      margin-bottom: 270px;
+      overflow: hidden;   //飛び出し防止の為
+      .new-items-inner {
+        width: 850px;
+        display: flex;
+        justify-content: space-between;
+        margin: 123px auto ;
+      }
+      h2 {
+        @include text-left(20px);
+        @include topics;
+      }
+      h3 {
+        @include text-left(40px);
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+// ------------------------------------------------
+// 　　　　　　　メイン（メニュー）
+// ------------------------------------------------
+
+#menu {
+  main {
+    .manu-main-image img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      margin-bottom: 170px
+    }
+    h2 {
+      @include text-center(10px);
+      @include topics;
+    }
+    h3 {
+      @include text-center(50px);
+      font-weight: bold;
+    }
+    .menu-drink {
+      width: 1000px;
+      margin: 0 auto 170px auto;
+      .menu-drink-list {
+        height: 650px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        img {
+          transition: 0.5s ;
+        }
+        img:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .menu-food {
+      width: 1000px;
+      margin: 0 auto 170px auto;
+      .menu-food-list {
+        height: 650px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        img {
+          transition: 0.5s ;
+        }
+        img:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+// ------------------------------------------------
+// 　　　　　　　メイン（店舗情報）
+// ------------------------------------------------
+
+#store {
+  main {
+    .store-main-image img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      margin-bottom: 170px;
+    }
+    .store-info {
+      h2 {
+        @include text-center(10px);
+        @include topics;
+      }
+      h3 {
+        @include text-center(35px);
+        font-weight: bold;
+      }
+      p {
+        @include text-center(112px);
+        line-height: 1.6;
+      }
+    }
+    .store-info-mihama {
+      width: 960px;
+      margin: 0 auto 170px auto;
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 1.6;
+      }
+      .store-info-address{
+        display: flex;
+        margin-bottom: 30px;
+        i {
+          height: 40px;
+          width: 40px;
+          font-size: 25px;
+          color: $base-color;
+          background-color: $accent-color;
+          border-radius: 50%;
+          line-height: 40px;
+          text-align: center;
+          margin-right: 20px;
+        }
+        .store-info-address-text {
+          address {
+            line-height: 1.6;
+          }
+        }
+      }
+      .store-info-time {
+        display: flex;
+        margin-bottom: 30px;
+        i {
+          height: 40px;
+          width: 40px;
+          font-size: 25px;
+          color: $base-color;
+          background-color: $accent-color;
+          border-radius: 50%;
+          line-height: 40px;
+          text-align: center;
+          margin-right: 20px;
+        }
+     }
+      .store-info-tel {
+        display: flex;
+        margin-bottom: 30px;
+        i {
+          height: 40px;
+          width: 40px;
+          font-size: 20px;
+          color: $base-color;
+          background-color: $accent-color;
+          border-radius: 50%;
+          line-height: 40px;
+          text-align: center;
+          margin-right: 20px;
+        }
+      }
+    }
+    .store-info-map {
+      width: 1060px;
+      height: 430px;
+      margin: 0 auto 270px auto;
+    }
+  }
+}
+
+// ------------------------------------------------
+// 　　　　　　　メイン（ブログ）
+// ------------------------------------------------
+
+#blog {
+  main {
+    margin-bottom: 170px;
+    .blog-main-image img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      margin-bottom: 170px;
+    }
+    h2 {
+      @include text-center(10px);
+      @include topics;
+    }
+    h3 {
+      @include text-center(35px);
+      font-weight: bold;
+    }
+    ul {
+      width: 1000px;
+      height: 650px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      li {
+        background-image: url(../images/bg-body.png);
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: $main-color;
+        }
+        a {
+          transition: 0.5s ;
+        }
+        a:hover {
+          opacity: 0.7;
+        }
+        p {
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+
+// ------------------------------------------------
+// 　　　　　　　メイン（コンタクト）
+// ------------------------------------------------
+
+#contact {
+  main {
+    .contact-main-image img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      margin-bottom: 170px;
+    }
+    h2 {
+      @include text-center(10px);
+      @include topics;
+    }
+    h3 {
+      @include text-center(70px);
+      font-weight: bold;
+    }
+    .contact-text {
+      @include text-center(35px);
+    }
+    .form-all {
+      background-image: url(../images/bg-body.png);
+      width: 1000px;
+      margin: 0 auto 300px auto;
+      overflow: hidden;
+      font-weight: bold;
+      form {
+        width: 600px;
+        margin: 50px auto 90px auto;
+        input {
+          width: 600px;
+          height: 30px;
+          border: none;
+          margin-top: 10px;
+          margin-bottom: 40px;
+          font-size: 25px;
+        }
+        textarea {
+          height: 300px;
+          width: 600px;
+          border: none;
+          margin-top: 10px;
+          margin-bottom: 50px;
+          font-size: 25px;
+        }
+        .form-button-area {
+          text-align: center;
+          .form-button {
+            background-color: $accent-color;
+            color: #ffffff;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            border: none;
+            font-weight: bold;
+          }
+          .form-button:hover {
+            background-color: $base-color;
+            color: $accent-color;
+            border: 2px solid $accent-color;
+            transition: 0.5s;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// ------------------------------------------------
+// 　　　　　　　　　フッター
+// ------------------------------------------------
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  .footer-logo {
+    width: 75px;
+    margin: 60px auto 30px auto;
+  }
+  .footer-logo-bottom {
+    width: 310px;
+    border-bottom: 3px solid $base-color;
+    margin-bottom: 35px;
+  }
+  address {
+    color: $base-color;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+  ul {
+    list-style-type: none;
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 30px auto;
+  }
+  .footer-icon-top {
+    width: 310px;
+    border-top: 3px solid $base-color;
+    padding-top: 35px;
+  }
+  p {
+    color: $base-color;
+    margin-bottom: 65px;
+  }
+}
+.top-footer-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+
+
