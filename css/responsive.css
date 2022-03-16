@@ -67,7 +67,7 @@
     display: none;
   }
   .br-responsive {
-    display: inline;
+    display: inline !important;
   }
   #home header .topics {
     display: none;
@@ -126,7 +126,7 @@
     margin: 50px auto;
   }
   #home main .take-out .take-out-inner h2 {
-    font-size: 28px;
+    font-size: 23px;
     text-align: center;
   }
   #home main .take-out .take-out-inner h3 {

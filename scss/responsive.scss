@@ -91,10 +91,8 @@
 // --------------改行 レスポンシブ用----------------------
 
   .br-responsive {
-    display: inline;
+    display: inline !important;
   }
-
-  
 
 // ------------------------------------------------
 // 　　　　　　　　　ヘッダー
@@ -178,7 +176,7 @@
           width: 340px;
           margin: 50px auto;
           h2 {
-            font-size: 28px;
+            font-size: 23px;
             text-align: center;
           }
           h3 {
