@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/hamburger-menu.css">
   <link rel="stylesheet" href="css/hover.css">
+  <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,13 +21,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/hamburger-menu.js"></script>
   <script src="https://kit.fontawesome.com/5fb0c376af.js" crossorigin="anonymous"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/hover-image.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/hover-image.js"></script>
 
 
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
 </head>
 
 <body id="home">
@@ -193,16 +204,7 @@
     </div>
   </div>
 
-  <script>
-    $(document).ready(function () {
-      $('.slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    });
-  </script>
+
 </body>
 
 </html>
