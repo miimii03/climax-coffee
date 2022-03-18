@@ -78,7 +78,7 @@
   #home header .copylight {
     display: none;
   }
-  #home header ul {
+  #home header .nav ul {
     display: none;
   }
   #home header .header-logo img {
